@@ -1,0 +1,11 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ],
+  "commentTranslate.targetLanguage": "zh-CN",
+  "editor.maxTokenizationLineLength": 2000000,
+  "prettier.configPath": ".prettierrc.json"
+}
