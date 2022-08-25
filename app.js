@@ -10,6 +10,9 @@ class AppBootHook {
   configWillLoad() {}
 
   async didLoad() {
+    this.app.messenger.on('xxx_action', (data) => {
+      console.log(data);
+    });
     this.app.pool = puppeteerPool();
     console.log('挂载puppeteerPool');
   }

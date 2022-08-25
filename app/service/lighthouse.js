@@ -3,7 +3,7 @@ const getData = require('../../mock/mock');
 const lighthouse = require('lighthouse');
 const { URL } = require('url');
 
-(async () => {})();
+// (async () => {})();
 
 /**
  * Test Service
@@ -14,6 +14,7 @@ class LighthouseService extends Service {
     const startTime = Date.now();
     let res = {};
     try {
+      console.log(res)
       res = await app.pool.use(async (browser) => {
         console.log('开始执行puppeteer', browser);
         const url = 'https://bcc.xiwang.com';
